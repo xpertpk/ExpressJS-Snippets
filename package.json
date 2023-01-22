@@ -1,0 +1,22 @@
+{
+  "name": "expressjs-snippets",
+  "displayName": "ExpressJS Snippets",
+  "description": "This is simple code snippet extension for express / node js projects. Below is the List of few Triggers that will generate boilerplate Codes.",
+  "publisher": "Shahbaz Mughal",
+  "icon": "icon.png",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.74.0"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "javascript",
+        "path": "./snippets/snippets.code-snippets"
+      }
+    ]
+  }
+}
