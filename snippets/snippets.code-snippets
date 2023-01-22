@@ -1,5 +1,5 @@
 {
-    "Expressjs Server Boiletplate Code": {
+    "Create Express Server": {
         "prefix": "!express",
         "body": [
             "const express = require('express');",
@@ -22,6 +22,22 @@
             "});",
 
         ],
-        "description": "Basic Express server code"
+        "description": "Create express server"
+    },
+    "Get Route Methode": {
+        "prefix": "!route.get",
+        "body":[
+            "app.get('/users/:id', async (req, res) => {",
+            "   try {",
+            "       const id = req.params.id;",
+            "       // code that could throw an error, such as an asynchronous function",
+            "       const user = await fetchUser(id);",
+            "       res.send(`User: ${user}`);",
+            "   } catch (error) {",
+            "       res.status(500).send({ error: error.message });",
+            "   }",
+            "});",
+        ],
+        "description": "Get Route for express js server"
     }
 }
