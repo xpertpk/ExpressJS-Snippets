@@ -15,6 +15,10 @@ Below is the List of few Triggers that will generate boilerplate Codes.
 | !mongo.cloud  |Connect to Mongo DB Cloud Storage |
 
 <!-- Author -->
-Mern Stack Developer - Shahbaz Mughal
+###### Mern Stack Developer - Shahbaz Mughal
+
 My Passion and Love:
-Hostings House & Mumara.
+
+**Hostings House & Mumara**.
+
+![App Logo](https://hmco.pk/icon.png)
