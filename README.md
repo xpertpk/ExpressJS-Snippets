@@ -18,7 +18,7 @@ ExpressJS snippets are code snippets that can be used to quickly write and inser
 - Overall, ExpressJS snippets can be a valuable tool for developers working with the ExpressJS framework, helping them write code faster, more
 
 ### `ExpressJS Snippets`
-![ExpressJS Snippets](express.gif)
+![ExpressJS Snippets](https://raw.githubusercontent.com/xpertpk/express-snippets/main/express.gif)
 
 ## Supported languages (file extensions)
 
