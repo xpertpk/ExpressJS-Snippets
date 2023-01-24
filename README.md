@@ -1,8 +1,24 @@
 # ExpressJs Snippets
 
 ## Snippets info
-This is simple code snippet extension for express / node js projects. 
-Below is the List of few Triggers that will generate boilerplate Codes.
+ExpressJS snippets are code snippets that can be used to quickly write and insert common ExpressJS code patterns into your application. Some benefits of using ExpressJS snippets include:
+
+- Increased productivity: ExpressJS snippets can help you write code faster and more efficiently, allowing you to focus on the logic of your application rather than the syntax of the ExpressJS framework.
+
+- Consistency: Using ExpressJS snippets can help ensure that your code is consistent and follows best practices, making it easier to maintain and understand.
+
+- Reduced errors: ExpressJS snippets can help reduce the number of errors in your code, as they are pre-written and tested code patterns.
+
+- Learning aid: ExpressJS snippets can be a useful tool for learning the framework, as they can help you understand how different parts of ExpressJS work and how they can be used in your application.
+
+- Community support: Many popular code editors like Visual Studio Code, have a large community of developers who contribute and share their own ExpressJS snippets, so you can find the snippet that best suits your needs.
+
+- Customization: You can also customize and modify the snippets to fit your specific requirements and development style.
+
+- Overall, ExpressJS snippets can be a valuable tool for developers working with the ExpressJS framework, helping them write code faster, more
+
+### `ExpressJS Snippets`
+![ExpressJS Snippets](express.gif)
 
 ## Supported languages (file extensions)
 
@@ -20,6 +36,7 @@ Below is the List of few Triggers that will generate boilerplate Codes.
 | `!route.all`    | Create ALL Route Methods          |
 | `!mongo.local`  | Connect to Local Mongo DB         |
 | `!mongo.cloud`  | Connect to Mongo DB Cloud Storage |
+| `!upload.image` | Upload and store image to server  |
 
 
 ## ExpressJs Snippets
@@ -198,9 +215,49 @@ mongoose.connect(process.env.MONGO_DB_URL, {
 });
 ```
 
+### `!upload.image`
+
+```javascript
+const express = require('express');
+const multer = require('multer');
+const app = express();
+const storage = multer.diskStorage({
+    destination: (req, file, cb) => {
+        cb(null, 'uploads/');
+    },
+    filename: (req, file, cb) => {
+        cb(null, file.originalname);
+    }
+});
+const upload = multer({ storage });
+
+app.post('/upload', upload.single('image'), (req, res) => {
+    if (!req.file) {
+        return res.status(400).send('No file uploaded.');
+    }
+    res.send(`File uploaded: ${req.file.originalname}`);
+});
+
+app.listen(3000, () => {
+    console.log('Server running on port 3000');
+});
+```
+
 ## Release Notes
 
-This is the release notes.
+ExpressJs snippets release notes.
+
+### 1.0.7
+
+ExpressJS Snippet help gif uploaded
+
+### 1.0.6
+
+ExpressJS Snippet Code finished
+
+### 1.0.5
+
+ExpressJS route that handles image upload and saving using the `multer` middleware.
 
 ### 1.0.4
 
@@ -231,4 +288,11 @@ My Passion and Love:
 
 **Hostings House & Mumara**.
 
-![App Logo](https://hmco.pk/icon.png)
+![App Logo](https://raw.githubusercontent.com/xpertpk/express-snippets/main/icon.png)
+
+```javascript
+Install Extension for all type of expressjs project snippets here:
+https://marketplace.visualstudio.com/items?itemName=Xpertpk.express-snippets
+```
+
+**Enjoy!**

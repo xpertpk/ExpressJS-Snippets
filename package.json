@@ -1,14 +1,14 @@
 {
   "name": "express-snippets",
   "displayName": "ExpressJS Snippets",
-  "description": "This is simple code snippet extension for express / node js projects. Below is the List of few Triggers that will generate boilerplate Codes.",
+  "description": "ExpressJS snippets are code snippets that can be used to quickly write and insert common ExpressJS code patterns into your application.",
   "publisher": "Xpertpk",
   "icon": "icon.png",
   "repository": {
     "type": "git",
     "url":"https://github.com/xpertpk"
   },
-  "version": "1.0.4",
+  "version": "1.0.7",
   "engines": {
     "vscode": "^1.74.0"
   },

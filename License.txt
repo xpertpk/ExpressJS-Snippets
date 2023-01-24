@@ -1,5 +1,5 @@
 Name: Express Snippets
-Version: 1.0.4
+Version: 1.0.7
 Author: Shahbaz Mughal
 
 This extension is distributed under the MIT License.
