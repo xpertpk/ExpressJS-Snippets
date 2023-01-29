@@ -295,4 +295,9 @@ Install Extension for all type of expressjs project snippets here:
 https://marketplace.visualstudio.com/items?itemName=Xpertpk.express-snippets
 ```
 
+```javascript
+Read more information about expressjs snippets:
+https://meshahbazmughal.medium.com/expressjs-snippets-the-vscode-extension-fab92e853430
+```
+
 **Enjoy!**
